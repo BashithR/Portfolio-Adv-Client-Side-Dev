@@ -16,23 +16,28 @@ body {
 header {
   position: fixed;
   height: 3rem;
-  width: 100%;
-  top: 0;
-  background-color: black;
-  color: white;
+  width: fit-content;
+  padding: 0.5rem 1rem;
+  top: 2rem;
+  right: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 0.1rem solid white;
+  border-radius: 2rem;
   z-index: 1;
 }
 
 nav ul {
   display: flex;
-  justify-content: center;
-  align-items: center;
   list-style: none;
   gap: 1rem;
 }
 
-a {
+header a {
   text-decoration: none;
+  color: black;
 }
 
 /* ----------------------------------- Footer ----------------------------- */
@@ -47,47 +52,53 @@ footer {
 /* ----------------------------------- Home Page ----------------------------- */
 
 .home {
-  height: 100vh;
-  width: 100rem;
-  max-width: 100%;
+  height: auto;
+  width: 100vw;
+  background-image: url("./assets/homeBackground.png");
+  background-size: cover;
+  background-position: center;
 }
 
 #introContainer {
-  padding: 3rem;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 0;
-  position: relative;
+  height: 100vh;
+  width: 100vw;
+  padding: 5rem;
+  display: grid;
+  grid-template-columns: 70% 30%;
+  place-content: center;
+  justify-items: center;
 }
 
 #mainText {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: flex-start;
-  gap: 2rem;
-  position: relative; /* To put the txt above other content */
-  z-index: 2;
+  gap: 1rem;
 }
 
 #name {
+  background-color: white;
   font-size: 4rem;
 }
-
 #career {
+  background-color: white;
   font-size: 2rem;
 }
+
 #hireMeBtn {
+  height: fit-content;
+  width: fit-content;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 1rem;
+  background-color: white;
+  color: black;
   font-size: 1rem;
 }
 
-#profilePic {
-  width: 20rem;
-  height: 20rem;
-  transform: translateX(-10rem);
-  border: 0.1rem solid black;
-  border-radius: 50%; /* Rounded image */
-  object-fit: cover;
-  z-index: -1;
+aside {
+  position: absolute;
+  bottom: 10rem;
+  right: 5rem;
+  color: white;
 }
