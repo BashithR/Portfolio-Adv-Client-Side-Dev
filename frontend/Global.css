@@ -1,0 +1,93 @@
+/* ----------------------------------- FONTS ----------------------------- */
+
+/* ----------------------------------- Global ----------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+}
+
+/* ----------------------------------- Header ----------------------------- */
+header {
+  position: fixed;
+  height: 3rem;
+  width: 100%;
+  top: 0;
+  background-color: black;
+  color: white;
+  z-index: 1;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  gap: 1rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ----------------------------------- Footer ----------------------------- */
+footer {
+  height: 3rem;
+  background-color: black;
+  color: white;
+  text-align: center;
+  z-index: 1;
+}
+
+/* ----------------------------------- Home Page ----------------------------- */
+
+.home {
+  height: 100vh;
+  width: 100rem;
+  max-width: 100%;
+}
+
+#introContainer {
+  padding: 3rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0;
+  position: relative;
+}
+
+#mainText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+  position: relative; /* To put the txt above other content */
+  z-index: 2;
+}
+
+#name {
+  font-size: 4rem;
+}
+
+#career {
+  font-size: 2rem;
+}
+#hireMeBtn {
+  font-size: 1rem;
+}
+
+#profilePic {
+  width: 20rem;
+  height: 20rem;
+  transform: translateX(-10rem);
+  border: 0.1rem solid black;
+  border-radius: 50%; /* Rounded image */
+  object-fit: cover;
+  z-index: -1;
+}
