@@ -20,18 +20,46 @@
     </header>
     <main>
       <section class="contactMe">
-        <h3>Please fill out this Form</h3>
+        <h3>Let's make this happen :D</h3>
         <hr />
         <form action="#" method="post">
           <!-- Personal Info Group -->
           <fieldset>
             <legend>Your Details</legend>
 
-            <label for="name">Full Name:</label>
-            <input type="text" id="name" name="name" required /><br /><br />
+            <label for="name">Full Name</label>
+            <input
+              type="text"
+              id="fname"
+              name="fname"
+              placeholder="your name here..."
+              required
+            />
+            <br />
+            <br />
 
-            <label for="email">Email Address:</label>
-            <input type="email" id="email" name="email" required /><br /><br />
+            <label for="email">Email Address</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="name@gmail.com"
+              required
+            />
+            <br />
+            <br />
+
+            <label for="phone">Phone Number</label>
+
+            <input
+              type="tel"
+              id="phoneNumber"
+              name="phone"
+              placeholder="0"
+              required
+            />
+            <br />
+            <br />
           </fieldset>
           <br />
 
@@ -39,15 +67,32 @@
           <fieldset>
             <legend>Preferences</legend>
 
-            <label for="reason">Reason for Contact:</label>
+            <label for="reason">Reason for Contact</label>
             <select id="reason" name="reason">
               <option value="project">Project Inquiry</option>
               <option value="collaboration">Collaboration</option>
               <option value="videogig">Video Gig</option>
-              <option vlaue="other">Other</option>
+              <option vlaue="design">Design</option>
             </select>
             <br />
             <br />
+
+            <p>How would you like to be contacted?</p>
+            <label>
+              <input type="radio" name="contactMethod" value="email" />
+              Email
+            </label>
+
+            <label>
+              <input type="radio" name="contactMethod" value="phone" />
+              Phone
+            </label>
+
+            <label>
+              <input type="radio" name="contactMethod" value="whatsapp" />
+              WhatsApp
+            </label>
+            <br /><br />
 
             <p>Would you like to receive my newsletter?</p>
             <label>
@@ -61,23 +106,24 @@
             <br />
             <br />
 
-            <label
-              ><input type="checkbox" name="updates" value="updates" /> Send me
-              updates about new projects</label
-            >
+            <label>
+              <input type="checkbox" name="updates" value="updates" /> Send me
+              updates about new projects
+            </label>
           </fieldset>
           <br />
 
           <!-- Message Group -->
           <fieldset>
-            <legend>Your Message</legend>
-            <label for="message">Message:</label><br />
+            <legend>Send us a message</legend>
+            <label for="message"
+              >Tell us about what you'd expect from us :D</label
+            ><br />
             <textarea
               id="message"
               name="message"
               rows="5"
-              cols="30"
-              required
+              placeholder="Describe your project or message here..."
             ></textarea>
           </fieldset>
           <br />
