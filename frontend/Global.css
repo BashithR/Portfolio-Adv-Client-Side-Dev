@@ -70,9 +70,7 @@ footer {
 .home {
   height: auto;
   width: 100vw;
-  background-image: url("./assets/Backgrounds/homeBackground3.png");
-  background-size: cover;
-  background-position: center;
+  background: linear-gradient(to bottom, white, black);
 }
 
 #introContainer {
@@ -153,3 +151,5 @@ footer {
 #sidebar h4 {
   font-size: 1.25rem;
 }
+
+/* About Section */
