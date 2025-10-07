@@ -205,13 +205,13 @@ article {
 
 .journey h2,
 .journey h3 {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Helvetica, sans-serif;
   font-style: normal;
   text-align: center;
   margin-bottom: 1rem;
 }
 
-.journey p {
+.journey > p {
   padding-left: 1rem;
   padding-right: 1rem;
   text-align: justify;
@@ -220,4 +220,16 @@ article {
 
 #learnt-lesson {
   text-align: center;
+}
+
+#special-message {
+  font-family: "Shadows Into Light", cursive;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 1rem;
+  letter-spacing: 0.2rem;
+  background-color: aquamarine;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7);
 }
