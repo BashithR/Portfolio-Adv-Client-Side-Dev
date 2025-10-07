@@ -188,30 +188,31 @@ article {
 
 /* Sections in About */
 
-.journey {
+.story {
   margin-top: 2rem;
   padding: 2rem;
   border: 1px solid black;
   border-radius: 1rem;
 }
 
-.journey h1 {
+.story > h1 {
   font-family: "Amatic SC", sans-serif;
   font-weight: 700;
   font-style: normal;
+  font-size: 3rem;
   text-align: center;
   margin-bottom: 1rem;
 }
 
-.journey h2,
-.journey h3 {
-  font-family: Helvetica, sans-serif;
-  font-style: normal;
+.story > h3 {
+  font-family: "Shadows Into Light", cursive;
+  font-weight: 600;
+  font-size: 1.5rem;
   text-align: center;
   margin-bottom: 1rem;
 }
 
-.journey > p {
+.story > p {
   padding-left: 1rem;
   padding-right: 1rem;
   text-align: justify;
@@ -224,7 +225,7 @@ article {
 
 #special-message {
   font-family: "Shadows Into Light", cursive;
-  font-weight: 500;
+  font-weight: 600;
   font-style: normal;
   font-size: 1.5rem;
   text-align: center;
