@@ -82,10 +82,11 @@ footer {
   align-items: center;
 }
 
+/* First <p> in the footer name which is Bashith Ratnaweera */
 #footer-name p:nth-child(1) {
   font-size: 2rem;
 }
-
+/* Second <p> in the footer name which is tyhe Career */
 #footer-name p:nth-child(2) {
   text-align: center;
 }
@@ -126,6 +127,10 @@ footer {
 
 #footer-last hr {
   width: 80%;
+}
+
+#footer-last hr + p {
+  padding-top: 0.5rem;
 }
 
 #footer-last p:last-child {
