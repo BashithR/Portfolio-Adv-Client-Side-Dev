@@ -348,8 +348,26 @@ form label + select {
   margin-top: 1rem;
 }
 
-input[type="text"] {
-  width: 100%;
+/* Attribute Selectors */
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+  width: 50%;
   height: 2rem;
-  text-align: center;
+  text-align: left;
+}
+
+/* Validity Pseudo class for the Form */
+
+input[type="text"]:valid,
+input[type="email"]:valid,
+input[type="tel"]:valid {
+  background-color: rgba(0, 255, 0, 0.3); /* Green */
+}
+
+input[type="text"]:invalid,
+input[type="email"]:invalid,
+input[type="tel"]:invalid {
+  background-color: rgba(255, 0, 0, 0.3); /* Red */
 }
