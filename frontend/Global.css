@@ -390,3 +390,32 @@ textarea {
   padding: 1rem;
   width: 100%;
 }
+
+.form-buttons {
+  margin: 0 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.form-buttons button {
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+form .form-buttons #submitBtn {
+  background-color: green;
+  color: white;
+}
+
+form .form-buttons #resetBtn {
+  background-color: red;
+  color: white;
+}
+
+.form-buttons button:hover {
+  transform: scale(1.1);
+  filter: brightness(1.5);
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
