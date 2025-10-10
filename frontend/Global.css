@@ -373,3 +373,20 @@ input[type="email"]:valid,
 input[type="tel"]:valid {
   background-color: rgba(0, 255, 0, 0.3); /* Green */
 }
+
+select {
+  height: 2rem;
+  padding: 0 1rem;
+  font-weight: 600;
+}
+
+select:hover,
+input[type="radio"],
+input[type="checkbox"] {
+  cursor: pointer;
+}
+
+textarea {
+  padding: 1rem;
+  width: 100%;
+}
