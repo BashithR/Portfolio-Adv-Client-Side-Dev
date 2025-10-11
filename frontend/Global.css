@@ -49,6 +49,15 @@ header a {
   color: black;
 }
 
+/* Header Hover */
+header li {
+  transition: all 0.3s ease;
+}
+header li:hover {
+  transform: scale(1.2);
+  font-weight: bold;
+}
+
 a.active {
   color: red;
   position: relative;
@@ -404,6 +413,7 @@ textarea {
   transition: all 0.3s ease;
 }
 
+/* Specificity */
 form .form-buttons #submitBtn {
   background-color: green;
   color: white;
